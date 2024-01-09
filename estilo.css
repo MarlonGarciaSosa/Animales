@@ -1,0 +1,71 @@
+* {
+    font-size: 2rem;
+    font-family: Graphik,Arial,sans-serif;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+html {
+    background-color: black;
+}
+
+header{
+    background-color: #333;
+}
+header #tabla2 {
+    background-color: rgb(74, 74, 74)
+}
+
+header #tabla2 th{
+    border: 3px solid #444;
+}
+
+header #caballero{
+    background-color: #333;
+    width: 3rem;
+    height: 4rem;
+}
+header #sol{
+    background-color: #333;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+main{
+    background-color: #ff8675;
+}
+
+main *{
+  
+    background-color: #ff8675;
+}
+main #encabezado2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+main #sol {
+    width: 2rem;
+    height: 2rem;
+}
+
+main #sección2 img {
+    width: 9rem;
+    height: 7rem;
+}
+
+main #sección2 #tabla3, #sección2 tr, #sección2 th, #sección2 td {
+    border: 0.1rem solid gray;
+    border-radius: 0.1rem;
+}
+footer {
+    background-color: #ed7c6d;
+}
+
+footer *{
+    background-color: #ed7c6d;
+}
+
+footer a {
+    color: rgb(78, 78, 248);
+}
