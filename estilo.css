@@ -1,9 +1,10 @@
 * {
     font-size: 2rem;
-    font-family: Graphik,Arial,sans-serif;
     text-align: center;
     border-collapse: collapse;
     margin: 0 auto;
+    padding: 0;
+    font-family: Century Gothic,Arial,sans-serif;
 }
 html {
     background-color: black;
@@ -12,6 +13,7 @@ html {
 header{
     background-color: #333;
 }
+
 header #tabla2 {
     background-color: rgb(74, 74, 74)
 }
@@ -52,6 +54,7 @@ main #sol {
 main #sección2 img {
     width: 9rem;
     height: 7rem;
+    display: flex;
 }
 
 main #sección2 #tabla3, #sección2 tr, #sección2 th, #sección2 td {
