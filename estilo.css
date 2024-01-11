@@ -53,8 +53,7 @@ main #sol {
     height: 2rem;
 }
 main #sección1 #imagen1 {
-    width: 50%;
-    display: flex;
+    width: 75%;
 }
 main #sección2 img {
     width: 9rem;
