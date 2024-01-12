@@ -59,12 +59,16 @@ main #sección1 #imagen1 {
 /**Celular**/
 @media (max-width: 767px) {
     * {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     main #sección2 img {
         width: 4rem;
         height: 3rem;
         display: flex;
+    }
+    #flecha {
+        width: 1rem;
+        height: 2rem;
     }
 }
 /**Tablet**/
