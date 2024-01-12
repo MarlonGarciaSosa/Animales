@@ -61,13 +61,14 @@ main #sección1 #imagen1 {
         font-size: 1.25rem;
     }
     main #sección2 img {
-        width: 4rem;
-        height: 3rem;
+        width: 6rem;
+        height: 5rem;
         display: flex;
     }
     #flecha {
         width: 1rem;
         height: 2rem;
+        margin-top: 4px;
     }
 }
 /**Tablet**/
