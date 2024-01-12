@@ -58,11 +58,8 @@ main #sección1 #imagen1 {
 }
 /**Celular**/
 @media (max-width: 767px) {
-    p, h2 {
+    * {
         font-size: 1.25rem;
-    }
-    footer {
-        font-size: 1.5rem;
     }
     main #sección2 img {
         width: 4rem;
