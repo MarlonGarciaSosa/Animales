@@ -78,6 +78,7 @@ main #sección1 #imagen1 {
     #flecha {
         width: 3rem;
         height: 1.5rem;
+        margin-left: 1rem;
     }
 }
 /**Tablet**/
