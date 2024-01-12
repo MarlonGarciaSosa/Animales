@@ -78,7 +78,6 @@ main #sección1 #imagen1 {
         margin-top: 3rem;
     }
 }
-}
 /**Tablet**/
 @media (min-width: 768px) and (max-width: 990px) {
     main #sección2 img {
