@@ -67,7 +67,7 @@ main #sección1 #imagen1 {
     h2 {
         font-size: 1.30rem;
     }
-    p {
+    #MuchoTexto {
         margin-bottom: 1rem;
     }
     main #sección2 img {
@@ -81,6 +81,7 @@ main #sección1 #imagen1 {
         margin-left: 1rem;
     }
 }
+
 /**Tablet**/
 @media (min-width: 768px) and (max-width: 990px) {
     main #sección2 img {
