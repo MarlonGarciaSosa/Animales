@@ -2,7 +2,7 @@
     font-size: 2rem;
     text-align: center;
     border-collapse: collapse;
-    margin: 0 auto;
+    margin: auto auto;
     padding: 0;
     font-family: Century Gothic,Arial,sans-serif;
 }
@@ -56,10 +56,32 @@ main #sección1 #imagen1 {
     width: 50%;
     display: flex;
 }
-main #sección2 img {
-    width: 4rem;
-    height: 2rem;
-    display: flex;
+/**Celular**/
+@media (max-width: 767px) {
+    * {
+        font-size: 1rem;
+    }
+    main #sección2 img {
+        width: 4rem;
+        height: 3rem;
+        display: flex;
+    }
+}
+/**Tablet**/
+@media (min-width: 768px) and (max-width: 990px) {
+    main #sección2 img {
+        width: 9rem;
+        height: 7rem;
+        display: flex;
+    }
+}
+/**PC**/
+@media (min-width: 991px) {
+    main #sección2 img {
+        width: 9rem;
+        height: 7rem;
+        display: flex;
+    }
 }
 
 main #sección2 #tabla3, #sección2 tr, #sección2 th, #sección2 td {
