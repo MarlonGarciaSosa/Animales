@@ -34,16 +34,16 @@
         </table> 
     </header>
     <main>
-        <h1>Feria de adopción</h1>
+        <h1 id="Titulo">Feria de adopción</h1>
         <section id="sección1">
-            <h1 id="encabezado2">Patitas Felices</h1>
+            <h1>Patitas Felices</h1>
             <img id="imagen1" src="feria.png"/>
             <p>Somos una organización de cuidado y adopción de animales domesticos sin fines de lucro. Entre nuestras tareas se encuentran la de conseguirle a los animales a nuestro cuidado, desde los más pequeño a los más grandes, un lugar donde vivir. Nos encontraremos el día 9 de enero en la Plaza César a las 8 de la mañana para dar cachorros, gatitos, y otros animales en adopción. ¡Se el primero en dar un hogar!</p>
             <hr>
             <table>
                 <tr>
-                    <th><img for="Almacen" src="flecha.png" id="flecha"/></th>
-                    <th><h2 id="Almacen" class="Almacen" onclick="AbrirPestaña()"> Vista previa de algunas de nuestras mascotas</h2></th>
+                    <th><img class="Almacen" src="flecha.png" id="flecha" onclick="AbrirPestaña()"/></th>
+                    <th><h2 class="Almacen" onclick="AbrirPestaña()"> Vista previa de algunas de nuestras mascotas</h2></th>
                 </tr>
             </table>           
         </section>
@@ -60,6 +60,9 @@
             <input id="comentario" type="text" placeholder="comenta algo">
             <br>
             <button type="submit">Enviar</button>
+            <a href="#titulo">Regresar al titulo</a>
+            <a href="mailto:marlongs2006@gmail.com">Contactenos</a>
+            <h3 onclick="alert('ahora tienes covid')">Tocame</h3>
         </form>
     </footer>
 </body>
