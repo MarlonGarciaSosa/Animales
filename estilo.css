@@ -6,6 +6,7 @@
     font-size: 2rem;
     font-family: Century Gothic,Arial,sans-serif;
 }
+
 html {
     background-color: black;
 }
@@ -13,11 +14,17 @@ html {
 header{
     background-color: #333;
 }
+
 header img{
     width: 3rem;
 }
+
 header #tabla2 {
     background-color: rgb(74, 74, 74)
+}
+
+#Ajedrez:hover, #Inicio:hover, #Frontenis:hover, #Bettas:hover {
+    background-color: rgb(100,100,100) ;
 }
 
 header #tabla2 th{
@@ -36,16 +43,8 @@ header #sol{
 }
 
 
-main{
+main, main *{
     background-color: #ff8675;
-}
-
-main *{
-  
-    background-color: #ff8675;
-}
-main #encabezado2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 main #sol {
@@ -56,6 +55,8 @@ main #sección1 #imagen1 {
     width: 50%;
     display: flex;
 }
+
+
 /**Celular**/
 @media (max-width: 767px) {
     * {
@@ -90,6 +91,7 @@ main #sección1 #imagen1 {
         display: flex;
     }
 }
+
 /**PC**/
 @media (min-width: 991px) {
     main #sección2 img {
@@ -99,15 +101,13 @@ main #sección1 #imagen1 {
     }
 }
 
+
 main #sección2 #tabla3, #sección2 tr, #sección2 th, #sección2 td {
     border: 0.1rem solid gray;
     border-radius: 0.1rem;
 }
-footer {
-    background-color: #ed7c6d;
-}
 
-footer *{
+footer, footer * {
     background-color: #ed7c6d;
 }
 
