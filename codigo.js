@@ -16,9 +16,9 @@ function CambiarColorLuna(){
 
 function AbrirPestaña(){
     const ElementoTexto = document.createElement("TEXTO");
-    const padre = document.querySelector(".padre");
-    const Carpeta = document.querySelector(".Almacen");
-    const Carpeta1 = document.querySelector(".Flecha");
+    const padre = document.querySelector(".animals-picture");
+    const Carpeta = document.querySelector(".content__table__h2");
+    const Carpeta1 = document.querySelector(".content__table__img");
     ElementoTexto.innerHTML =`<table id="tabla3">
     <tr>
         <th><img src="Aves.jpg"></th>
@@ -48,9 +48,9 @@ function AbrirPestaña(){
 };
 
 function Cerrar(){
-    const padre = document.querySelector(".padre");
-    const Carpeta = document.querySelector(".Almacen");
-    const Carpeta1 = document.querySelector(".Flecha");
+    const padre = document.querySelector(".animals-picture");
+    const Carpeta = document.querySelector(".content__table__h2");
+    const Carpeta1 = document.querySelector(".content__table__img");
     const Chorizo = document.querySelector(".Texto");
     Carpeta.setAttribute("onclick", "AbrirPestaña()");
     Carpeta1.setAttribute("onclick", "AbrirPestaña()");    
