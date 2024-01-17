@@ -1,16 +1,15 @@
 * {
-    color: lightgreen;
-    font-style: normal;
     text-align: center;
-    font-size: 2rem;
-    margin: 0 auto;
+    border-collapse: collapse;
+    margin: auto auto;
     padding: 0;
+    font-size: 2rem;
     font-family: Century Gothic,Arial,sans-serif;
 }
+
 html {
     background-color: black;
 }
-
 
 /**header**/
 header{
@@ -35,7 +34,7 @@ header{
 }
 
 .header-nav__table__link:hover {
-    background-color: rgb(100,100,100);
+    background-color: rgb(100,100,100) ;
 }
 
 .header-section #caballero{
@@ -50,49 +49,19 @@ header{
     height: 2rem;
 }
 
-
 /**main**/
-main, footer {
-    background-color: black;
+main, main *{
+    background-color: #ff8675;
 }
 
-main *, footer *{
-    background-color: black;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-}
-
-main h1{
-    text-transform: capitalize;
-    text-decoration: underline;
-    font-size: 5rem;
-}
-
-main h2{
-    font-size: 4rem;
-}
-
-main img {
+.second-footer__img {
     width: 50%;
     display: flex;
 }
 
-main p {
-    font-size: 2rem;
-    line-height: 1,5;
-}
-
-main table{
-    border: 0.25rem solid gray;
-    border-radius: 1rem;
-    border-collapse: collapse;
-
-}
-
-main table li{
-    border-top: 0.25rem solid gray;
-    border-radius: 1rem;
-    border-collapse: collapse;
+.animals-picture th, .animals-picture td {
+    border: 0.1rem solid gray;
+    border-radius: 0.1rem;
 }
 
 
@@ -133,8 +102,35 @@ footer, footer * {
     h2 {
         font-size: 1.30rem;
     }
+    .second-footer__p {
+        margin-bottom: 1rem;
+    }
+    .animals-picture img {
+        width: 6rem;
+        height: 5rem;
+        display: flex;
+    }
+    .content__table__img {
+        width: 3rem;
+        height: 1.5rem;
+        margin-left: 1rem;
+    }
 }
+
 /**Tablet**/
-@media (min-width: 768px) and (max-width: 990px) {}
+@media (min-width: 768px) and (max-width: 990px) {
+    .animals-picture img {
+        width: 9rem;
+        height: 7rem;
+        display: flex;
+    }
+}
+
 /**PC**/
-@media (min-width: 991px) {}
+@media (min-width: 991px) {
+    .animals-picture img {
+        width: 9rem;
+        height: 7rem;
+        display: flex;
+    }
+}
