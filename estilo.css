@@ -1,59 +1,124 @@
 * {
+    color: lightgreen;
+    font-style: normal;
     text-align: center;
-    border-collapse: collapse;
-    margin: auto auto;
-    padding: 0;
     font-size: 2rem;
+    margin: 0 auto;
+    padding: 0;
     font-family: Century Gothic,Arial,sans-serif;
 }
-
 html {
     background-color: black;
 }
 
+
+/**header**/
 header{
     background-color: #333;
 }
 
-header img{
-    width: 3rem;
+.header-section__table__img{
+    width: 2rem;
 }
 
-header #tabla2 {
-    background-color: rgb(74, 74, 74)
+.header-nav__table {
+    background-color: rgb(74, 74, 74);
 }
 
-#Ajedrez:hover, #Inicio:hover, #Frontenis:hover, #Bettas:hover {
-    background-color: rgb(100,100,100) ;
-}
-
-header #tabla2 th{
+.header-nav__table th{
     border: 3px solid #444;
+    border-collapse: collapse;
 }
 
-header #caballero{
+.header-nav__table__link {
+    color: rgb(78, 78, 248);
+}
+
+.header-nav__table__link:hover {
+    background-color: rgb(100,100,100);
+}
+
+.header-section #caballero{
     background-color: #333;
     width: 3rem;
     height: 4rem;
 }
-header #sol{
+
+.header-section #sol{
     background-color: #333;
     width: 2rem;
     height: 2rem;
 }
 
 
-main, main *{
-    background-color: #ff8675;
+/**main**/
+main, footer {
+    background-color: black;
 }
 
-main #sol {
-    width: 2rem;
-    height: 2rem;
+main *, footer *{
+    background-color: black;
+    letter-spacing: 2px;
+    word-spacing: 2px;
 }
-main #sección1 #imagen1 {
+
+main h1{
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-size: 5rem;
+}
+
+main h2{
+    font-size: 4rem;
+}
+
+main img {
     width: 50%;
     display: flex;
+}
+
+main p {
+    font-size: 2rem;
+    line-height: 1,5;
+}
+
+main table{
+    border: 0.25rem solid gray;
+    border-radius: 1rem;
+    border-collapse: collapse;
+
+}
+
+main table li{
+    border-top: 0.25rem solid gray;
+    border-radius: 1rem;
+    border-collapse: collapse;
+}
+
+
+/**footer**/
+footer, footer * {
+    background-color: #ed7c6d;
+}
+
+.footer-nav__a {
+    color: rgb(78, 78, 248);
+}
+
+.footer-form__input {
+    border: 3px solid gray;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    display: block;
+    margin-bottom: 0.50rem;
+
+}
+
+.footer-form__button {
+    border: 3px solid gray;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    display: block;
 }
 
 
@@ -68,49 +133,8 @@ main #sección1 #imagen1 {
     h2 {
         font-size: 1.30rem;
     }
-    #MuchoTexto {
-        margin-bottom: 1rem;
-    }
-    main #sección2 img {
-        width: 6rem;
-        height: 5rem;
-        display: flex;
-    }
-    #flecha {
-        width: 3rem;
-        height: 1.5rem;
-        margin-left: 1rem;
-    }
 }
-
 /**Tablet**/
-@media (min-width: 768px) and (max-width: 990px) {
-    main #sección2 img {
-        width: 9rem;
-        height: 7rem;
-        display: flex;
-    }
-}
-
+@media (min-width: 768px) and (max-width: 990px) {}
 /**PC**/
-@media (min-width: 991px) {
-    main #sección2 img {
-        width: 9rem;
-        height: 7rem;
-        display: flex;
-    }
-}
-
-
-main #sección2 #tabla3, #sección2 tr, #sección2 th, #sección2 td {
-    border: 0.1rem solid gray;
-    border-radius: 0.1rem;
-}
-
-footer, footer * {
-    background-color: #ed7c6d;
-}
-
-footer a {
-    color: rgb(78, 78, 248);
-}
+@media (min-width: 991px) {}
