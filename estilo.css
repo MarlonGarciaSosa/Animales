@@ -4,12 +4,13 @@
     margin: auto auto;
     padding: 0;
     font-size: 2rem;
-    font-family: Century Gothic,Arial,sans-serif;
+    font-family: Century, Arial, sans-serif;
 }
 
 html {
     background-color: black;
 }
+
 
 /**header**/
 header{
@@ -49,23 +50,31 @@ header{
     height: 2rem;
 }
 
+
 /**main**/
 main, main *{
     background-color: #ff8675;
 }
 
-.second-footer__img {
+.second-header__img {
     width: 50%;
     display: flex;
 }
 
-.animals-picture th, .animals-picture td {
+.content__animals-picture th, .content__animals-picture td {
     border: 0.1rem solid gray;
     border-radius: 0.1rem;
+}
+.content__table th {
+    border: 2px solid gray;
 }
 
 
 /**footer**/
+footer{
+    padding-top: 1rem;
+}
+
 footer, footer * {
     background-color: #ed7c6d;
 }
@@ -79,7 +88,7 @@ footer, footer * {
     border-top: 3px solid white;
     border-left: 3px solid white;
     display: block;
-    margin-bottom: 0.50rem;
+    margin-bottom: 0.25rem;
 
 }
 
@@ -102,10 +111,10 @@ footer, footer * {
     h2 {
         font-size: 1.30rem;
     }
-    .second-footer__p {
+    .second-header__p {
         margin-bottom: 1rem;
     }
-    .animals-picture img {
+    .content__animals-picture img {
         width: 6rem;
         height: 5rem;
         display: flex;
@@ -115,22 +124,31 @@ footer, footer * {
         height: 1.5rem;
         margin-left: 1rem;
     }
+    .texto__escritorio {
+        display: none;
+    }
 }
 
 /**Tablet**/
 @media (min-width: 768px) and (max-width: 990px) {
-    .animals-picture img {
+    .content__animals-picture img {
         width: 9rem;
         height: 7rem;
         display: flex;
+    }
+    .texto__celular {
+        display: none;
     }
 }
 
 /**PC**/
 @media (min-width: 991px) {
-    .animals-picture img {
+    .content__animals-picture img {
         width: 9rem;
         height: 7rem;
         display: flex;
+    }
+    .texto__celular {
+        display: none;
     }
 }
