@@ -3,52 +3,61 @@
     border-collapse: collapse;
     margin: auto auto;
     padding: 0;
-    font-size: 2rem;
     font-family: Century, Arial, sans-serif;
 }
 
 html {
-    background-color: black;
+    background-color: #333;
 }
+
+
 
 
 /**header**/
-header{
+header, header *{
     background-color: #333;
 }
 
-.header-section__table__img{
-    width: 2rem;
-}
 
-.header-nav__table {
-    background-color: rgb(74, 74, 74);
+/**Primera sección**/
+.header__section{
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 6px;
 }
-
-.header-nav__table th{
-    border: 3px solid #444;
-    border-collapse: collapse;
-}
-
-.header-nav__table__link {
-    color: rgb(78, 78, 248);
-}
-
-.header-nav__table__link:hover {
-    background-color: rgb(100,100,100) ;
-}
-
-.header-section #caballero{
+.header__section #caballero{
     background-color: #333;
+    display: inline;
     width: 3rem;
     height: 4rem;
 }
-
-.header-section #sol{
+.header__section #sol{
     background-color: #333;
+    display: inline;
     width: 2rem;
     height: 2rem;
 }
+
+
+/**Segunda nav**/
+.header__nav{
+    display: block;
+    text-align: center;
+    margin-bottom: 9px;
+}
+.header__nav__link{
+    display: inline;
+    width: 20%;
+    background-color: rgb(74, 74, 74);
+    color: rgb(78, 78, 248);    
+    border: 3px solid #444;
+}
+.header__nav__link:hover {
+    background-color: rgb(100,100,100);
+}
+
+
 
 
 /**main**/
@@ -56,73 +65,73 @@ main, main *{
     background-color: #ff8675;
 }
 
-.second-header__img {
-    width: 50%;
+
+/**Primera sección**/
+.main__header__img {
+    width: 75%;
     display: flex;
 }
+.main__header__p {
+    margin-bottom: 1rem;
+}
 
+
+/**Segunda sección**/
+.content__table th {
+    border: 2px solid gray;
+}
+.content__table__img {
+    display: flex;
+    width: 3rem;
+    height: 1.5rem;
+}
+
+
+/**Tercera sección**/
 .content__animals-picture th, .content__animals-picture td {
     border: 0.1rem solid gray;
     border-radius: 0.1rem;
 }
-.content__table th {
-    border: 2px solid gray;
+.content__animals-picture img {
+    width: 9rem;
+    height: 7rem;
+    display: flex;
 }
+
+
 
 
 /**footer**/
 footer{
     padding-top: 1rem;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 1rem;
 }
 
 footer, footer * {
     background-color: #ed7c6d;
 }
 
-.footer-nav__a {
-    color: rgb(78, 78, 248);
-}
 
-.footer-form__input {
+/**Primera sección**/
+.footer__nav__p {
+    display: inline;
+}
+.footer__nav__a {
     border: 3px solid gray;
-    border-top: 3px solid white;
-    border-left: 3px solid white;
-    display: block;
-    margin-bottom: 0.25rem;
-
+    text-decoration: none;
 }
 
-.footer-form__button {
-    border: 3px solid gray;
-    border-top: 3px solid white;
-    border-left: 3px solid white;
-    display: block;
-}
+
 
 
 /**Celular**/
 @media (max-width: 767px) {
-    * {
-        font-size: 1.25rem;
-    }
-    h1 {
-        font-size: 1.40rem;
-    }
-    h2 {
-        font-size: 1.30rem;
-    }
-    .second-header__p {
-        margin-bottom: 1rem;
-    }
     .content__animals-picture img {
         width: 6rem;
         height: 5rem;
         display: flex;
-    }
-    .content__table__img {
-        width: 3rem;
-        height: 1.5rem;
-        margin-left: 1rem;
     }
     .texto__escritorio {
         display: none;
@@ -131,11 +140,6 @@ footer, footer * {
 
 /**Tablet**/
 @media (min-width: 768px) and (max-width: 990px) {
-    .content__animals-picture img {
-        width: 9rem;
-        height: 7rem;
-        display: flex;
-    }
     .texto__celular {
         display: none;
     }
@@ -143,11 +147,6 @@ footer, footer * {
 
 /**PC**/
 @media (min-width: 991px) {
-    .content__animals-picture img {
-        width: 9rem;
-        height: 7rem;
-        display: flex;
-    }
     .texto__celular {
         display: none;
     }
