@@ -80,6 +80,7 @@ main, main *{
 }
 .main__section__p {
     width: 95%;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: #444;
 }
