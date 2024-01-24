@@ -22,16 +22,14 @@ header, header *{
 .header{
     width: 100%;
     position: fixed;
-    margin-top: -100px;
+    margin-top: -111.2px;
 }
 
 
 /**Primera sección**/
 .header__section{
     display: block;
-    text-align: center;
-    width: 100%;
-    padding-bottom: 6px;
+    padding: 5px;
 }
 .header__section #caballero{
     background-color: #333;
@@ -48,20 +46,71 @@ header, header *{
 
 
 /**Segunda nav**/
-.header__nav{
-    display: block;
-    text-align: center;
-    margin-bottom: 9px;
-}
-.header__nav__link{
-    display: inline;
-    width: 20%;
-    background-color: rgb(74, 74, 74);
-    color: rgb(78, 78, 248);    
-    border: 3px solid #444;
-}
 .header__nav__link:hover {
     background-color: rgb(100,100,100);
+}
+.header__nav::-webkit-scrollbar {
+    width: 95%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(63, 176, 213);
+}
+.header__nav::-webkit-scrollbar-thumb {
+    background-color:  rgb(78, 78, 248);
+    border-radius: 5px;
+}
+/**Celular**/
+@media (max-width: 767px) {
+    .header__nav{
+        display: flex;
+        overflow-x: scroll;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+    }
+    .header__nav__link{
+        position: relative;
+        display: inline;
+        min-width: 120px;
+        background-color: rgb(74, 74, 74);
+        color: rgb(78, 78, 248);    
+        border: 3px solid #444;
+        min-width: 20%;
+        margin: 0 2%;
+    }
+}
+/**Tablet**/
+@media (min-width: 768px) and (max-width: 990px) {
+    .header__nav{
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+    .header__nav__link{
+        position: relative;
+        display: inline;
+        min-width: 120px;
+        background-color: rgb(74, 74, 74);
+        color: rgb(78, 78, 248);    
+        border: 3px solid #444;
+        min-width: 15%;
+    }
+}
+/**PC**/
+@media (min-width: 991px) {
+    .header__nav{
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+    .header__nav__link{
+        position: relative;
+        display: inline;
+        min-width: 120px;
+        background-color: rgb(74, 74, 74);
+        color: rgb(78, 78, 248);    
+        border: 3px solid #444;
+        min-width: 15%;
+    }
 }
 
 
