@@ -9,7 +9,7 @@
 
 html {
     background-color: #333;
-    padding-top: 100px;
+    padding-top: 111.2px;
 }
 
 
@@ -77,6 +77,14 @@ header, header *{
         min-width: 20%;
         margin: 0 2%;
     }
+    .header{
+        margin-top: -120.8px;
+    }
+    html {
+        background-color: #333;
+        padding-top: 120.8px;
+    }
+
 }
 /**Tablet**/
 @media (min-width: 768px) and (max-width: 990px) {
