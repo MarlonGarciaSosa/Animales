@@ -17,11 +17,9 @@ function CambiarColorLuna(){
 
 function AbrirPestaña(){
     //General
-    const Carpeta__h2 = document.querySelector(".content__table__h2");
-    const Carpeta__img = document.querySelector(".content__table__img");
+    const Carpeta = document.querySelector(".content__table");
     const padre = document.querySelector(".content__animals-picture");
-    Carpeta__h2.setAttribute("onclick", "CerrarPestaña()");
-    Carpeta__img.setAttribute("onclick", "CerrarPestaña()");
+    Carpeta.setAttribute("onclick", "CerrarPestaña()");
 
 
     //Celular
@@ -79,12 +77,10 @@ function AbrirPestaña(){
 
 function CerrarPestaña(){
     const padre = document.querySelector(".content__animals-picture");
-    const Carpeta__h2 = document.querySelector(".content__table__h2");
-    const Carpeta__img = document.querySelector(".content__table__img");
+    const Carpeta = document.querySelector(".content__table");
     const Lista__elementoTexto__escritorio = document.querySelector(".texto__escritorio");
     const Lista__elementoTexto__celular = document.querySelector(".texto__celular");
-    Carpeta__h2.setAttribute("onclick", "AbrirPestaña()");
-    Carpeta__img.setAttribute("onclick", "AbrirPestaña()");    
+    Carpeta.setAttribute("onclick", "AbrirPestaña()");   
     padre.removeChild(Lista__elementoTexto__escritorio);
     padre.removeChild(Lista__elementoTexto__celular);
 };
