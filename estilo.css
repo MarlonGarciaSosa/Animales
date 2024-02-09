@@ -19,24 +19,41 @@ html {
 .header{
     width: 100%;
     position: fixed;
-    margin-top: -111.2px;
 }
-
+.flex-header {
+    display: grid;
+    grid-template-columns: 0 1fr;
+}
+.header__logo-section *{
+    padding-left: 1vw;
+}
+.header__Portafolio {
+    margin: auto;    
+}
+.header__Portafolio__h1 {
+    text-align: center;
+    color: rgb(30, 217, 255);
+}
+.active{
+    font-weight: 700;
+    color: rgb(30, 217, 255) !important;
+}
 
 /**Primera sección**/
-.header__section{
-    display: block;
-    padding: 5px;
+.header__logo-section {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 85px;
+    grid-template-rows: repeat(2, 26px);
+    margin-left: 1%;
 }
-.header__section #caballero{
-    display: inline;
-    width: 3rem;
-    height: 4rem;
+.header__logo-section__img {
+    width: 25px;
+    height: 25px;
+    margin: auto;
 }
-.header__section #sol{
-    display: inline;
-    width: 2rem;
-    height: 2rem;
+.header__logo-section__p {
+    color: rgb(0, 187, 255); 
 }
 
 
@@ -47,10 +64,10 @@ html {
 .header__nav::-webkit-scrollbar {
     height: 10px;
     border-radius: 5px;
-    background-color: orange;
+    background-color: rgb(0, 187, 255);
 }
 .header__nav::-webkit-scrollbar-thumb {
-    background-color:  rgb(215, 125, 0);
+    background-color:  rgb(40, 157, 199);
     border-radius: 5px;
 }
 /**Celular**/
@@ -66,53 +83,44 @@ html {
         display: inline;
         min-width: 120px;
         background-color: rgb(74, 74, 74);
-        color: orange; 
+        color: rgb(0, 187, 255); 
         border: 3px solid #444;
         min-width: 20%;
         margin: 0 2%;
     }
+    html {
+        padding-top: 105.6px;
+    }
     .header{
-        margin-top: -120.8px;
+        margin-top: -105.6px;
+        padding-top: 10px;
+    }
+}
+/**Tablet y PC**/
+@media (min-width: 768px) {
+    .header__nav{
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+    .header__nav__link{
+        position: relative;
+        display: inline;
+        min-width: 120px;
+        background-color: rgb(74, 74, 74);
+        color: rgb(0, 187, 255);    
+        border: 3px solid #444;
+        min-width: 15%;
     }
     html {
-        padding-top: 120.8px;
+        padding-top: 96px;
     }
+    .header {
+        margin-top: -96px;
+        padding-top: 10px;
+    }
+}
 
-}
-/**Tablet**/
-@media (min-width: 768px) and (max-width: 990px) {
-    .header__nav{
-        display: flex;
-        justify-content: space-evenly;
-        padding-bottom: 10px;
-    }
-    .header__nav__link{
-        position: relative;
-        display: inline;
-        min-width: 120px;
-        background-color: rgb(74, 74, 74);
-        color: orange;    
-        border: 3px solid #444;
-        min-width: 15%;
-    }
-}
-/**PC**/
-@media (min-width: 991px) {
-    .header__nav{
-        display: flex;
-        justify-content: space-evenly;
-        padding-bottom: 10px;
-    }
-    .header__nav__link{
-        position: relative;
-        display: inline;
-        min-width: 120px;
-        background-color: rgb(74, 74, 74);
-        color: rgb(255, 165, 0);      
-        border: 3px solid #444;
-        min-width: 15%;
-    }
-}
 
 
 
