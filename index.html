@@ -12,17 +12,24 @@
 
     <header class="header" id="titulo">
 
-        <section class="header__section">
-            <img class="header__section__img" id="caballero" src="caballero.png"/>
-            <img class="header__section__img" id="sol" onclick="CambiarColorSol()" src="sol.png"/>
-        </section>
+        <div class="flex-header">
+            <section class="header__logo-section">
+                <img class="header__logo-section__img" src="./images/Logo.png">
+                <p class="header__logo-section__p">ZilmakWeb</p>
+            </section>
+
+            <section class="header__Portafolio">
+                <h1 class="header__Portafolio__h1">Portafolio</h1>
+            </section>
+        </div>
 
         <nav class="header__nav">
-            <a class="header__nav__link" href="https://marlongarciasosa.github.io/Ajedrez/">Ajedrez</a>
-            <a class="header__nav__link" href="https://marlongarciasosa.github.io/Armas/">Armas</a>
-            <a class="header__nav__link" href="https://marlongarciasosa.github.io/Bettas/">Bettas</a>
-            <a class="header__nav__link" href="https://marlongarciasosa.github.io/Frontenis/">Frontenis</a>
             <a class="header__nav__link" href="https://marlongarciasosa.github.io/Inicio/">Inicio</a>
+        <!--<a class="header__nav__link" href="https://marlongarciasosa.github.io/Frontenis/">Frontenis</a>
+            <a class="header__nav__link" href="https://marlongarciasosa.github.io/Bettas/">Bettas</a>-->
+            <a class="header__nav__link" href="https://marlongarciasosa.github.io/Armas/">Armas</a>
+            <a class="header__nav__link active" href="https://marlongarciasosa.github.io/Animales/">Animales</a>
+            <a class="header__nav__link" href="https://marlongarciasosa.github.io/Ajedrez/">Ajedrez</a>
         </nav>
 
     </header>
@@ -35,19 +42,19 @@
         </header>
 
         <section class="main__section">
-            <img class="main__section__img" src="feria.jpg"/>
-            <p class="main__section__p">Somos una organización de cuidado y adopción de animales domesticos sin fines de lucro. Entre nuestras tareas se encuentran la de conseguirle a los animales a nuestro cuidado, desde los más pequeño a los más grandes, un lugar donde vivir. Nos encontraremos el día 9 de enero en la Plaza César a las 8 de la mañana para dar cachorros, gatitos, y otros animales en adopción. ¡Se el primero en dar un hogar!</p>
+            <img class="main__section__img" src="./images/feria.jpg"/>
+            <p class="main__section__p">Somos una organización de cuidado y adopción de animales domésticos sin fines de lucro. Entre nuestras tareas se encuentran la de conseguirle a los animales a nuestro cuidado, desde los más pequeño a los más grandes, un lugar donde vivir. Nos encontraremos el día 9 de enero en la Plaza César a las 8 de la mañana para dar cachorros, gatitos, y otros animales en adopción. ¡Se el primero en dar un hogar!</p>
         </section>
 
         <table class="content__table" onclick="AbrirPestaña()">
             <tr>
-                <th><img class="content__table__img" src="flecha.png" id="flecha"  class="Flecha"/></th>
+                <th><img class="content__table__img" src="./images/flecha.png" id="flecha"  class="Flecha"/></th>
                 <th><h3 class="content__table__h2" class="Almacen"> Vista previa de algunas de nuestras mascotas</h3></th>
             </tr>
         </table>
 
         <section class="content__animals-picture">
-            <!--Codigo JavaScript-->
+            <!--Código JavaScript-->
         </section>
 
     </main>
@@ -56,7 +63,14 @@
 
         <nav class="footer__nav">
             <p class="footer__nav__p">Para más información</p>
-            <a class="footer__nav__a" href="mailto:marlongs2006@gmail.com">Contáctanos</a>
+            <a class="footer__nav__a" href="mailto:marlongs2006@gmail.com">Contáctenos</a>
+        </nav>
+
+        <nav class="footer__nav">
+            <p class="footer__nav__p">Presione para ver mi:
+            <a class="footer__nav__a" href="https://marlongarciasosa.github.io/Sitio_Personal/">Sitio personal</a>
+            <a class="footer__nav__a" href="https://marlongarciasosa.github.io/Curriculum/">Currículum</a>
+            </p>
         </nav>
 
     </footer>
